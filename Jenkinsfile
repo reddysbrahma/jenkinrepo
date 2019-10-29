@@ -8,6 +8,7 @@ pipeline {
         
         '''
         sh "echo $ami_release"
+        sh "cat integration.tfvars"
         
            }
      }
