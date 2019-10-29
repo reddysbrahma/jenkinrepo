@@ -3,10 +3,8 @@ pipeline {
   stages {
   
     parameters {
-       string( name: 'ami_releaase', 
-            defaultValue: 'Release', 
-            description: 'Configuration to build (Debug/Release/...)')
-     }
+       string( name: 'ami_releaase')
+               }
     stage("sed") {
       steps{
     sh "touch file.txt"
