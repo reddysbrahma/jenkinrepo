@@ -7,6 +7,7 @@ pipeline {
       steps{
        
     println ami_release
+    sh "echo $ami_release"
          }
     }
   }
