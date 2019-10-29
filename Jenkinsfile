@@ -4,10 +4,10 @@ pipeline {
   
     
     stage("sed") {
-      parameters {
+      steps{
+        parameters {
        string( name: 'ami_releaase')
                }
-      steps{
     sh "touch file.txt"
     sh "cat file.txt"
          }
