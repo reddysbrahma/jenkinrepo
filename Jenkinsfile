@@ -9,7 +9,7 @@ pipeline {
     sh "cat file.txt"
     println ami_release
     println gitlab_version
-    sh "echo '${ami_release}'
+    sh "echo '${ami_release}'"
       }
     }
   }
