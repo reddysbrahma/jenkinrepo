@@ -8,4 +8,5 @@ pipeline {
     cat file.txt
   
     }
+  }
     
