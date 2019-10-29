@@ -1,5 +1,5 @@
 pipeline {
-  agent none
+  agent any
   stages {
   
     stage("sed") {
@@ -9,4 +9,4 @@ pipeline {
   
     }
   }
-    
+}
