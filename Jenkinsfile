@@ -3,9 +3,9 @@ pipeline {
   stages {
   
     stage("sed") {
-    touch file.txt
-    echo abc >> file.txt
-    cat file.txt
+    sh "touch file.txt"
+    sh "echo abc >> file.txt"
+    sh "cat file.txt"
   
     }
   }
