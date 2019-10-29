@@ -4,7 +4,7 @@ pipeline {
     stage("sed") {
       steps{
         sh '''#!/bin/bash +x
-        sed -i '/ami_release = /c ami_release = $ami_release' integration.tfvars
+        sed -i '/ami_release = /c ami_release = 15' integration.tfvars
         
         '''
         sh "echo $ami_release"
