@@ -6,8 +6,7 @@ pipeline {
     stage("sed") {
       steps{
        
-    sh "touch file.txt"
-    sh "cat file.txt"
+    println ami_release
          }
     }
   }
